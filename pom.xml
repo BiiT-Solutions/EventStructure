@@ -21,8 +21,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git.biit-solutions.com:EventStructure.git</connection>
-        <developerConnection>scm:git:git.biit-solutions.com:EventStructure.git</developerConnection>
+        <connection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</connection>
+        <connection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</developerConnection>
         <tag>KafkaClient</tag>
     </scm>
 
