@@ -4,7 +4,7 @@
 
     <groupId>com.biit</groupId>
     <artifactId>event-structure</artifactId>
-    <version>0.0.14</version>
+    <version>0.0.15-SNAPSHOT</version>
     <name>Event Structure</name>
 
     <distributionManagement>
@@ -23,7 +23,7 @@
     <scm>
         <connection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</connection>
         <developerConnection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</developerConnection>
-        <tag>event-structure-0.0.14</tag>
+        <tag>KafkaClient</tag>
     </scm>
 
     <build>
