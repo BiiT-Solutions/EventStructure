@@ -4,7 +4,7 @@
 
     <groupId>com.biit</groupId>
     <artifactId>event-structure</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Event Structure</name>
 
     <distributionManagement>
@@ -25,6 +25,16 @@
         <developerConnection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</developerConnection>
         <tag>KafkaClient</tag>
     </scm>
+
+
+    <properties>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-scm-provider-gitexe.version>1.9.2</maven-scm-provider-gitexe.version>
+        <jackson-annotations.version>2.9.0</jackson-annotations.version>
+        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
+        <!-- Biit Dependencies -->
+        <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
+    </properties>
 
     <build>
         <finalName>event-structure</finalName>
@@ -78,12 +88,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <properties>
-        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-        <maven-scm-provider-gitexe.version>1.9.2</maven-scm-provider-gitexe.version>
-        <jackson-annotations.version>2.9.0</jackson-annotations.version>
-        <biit-common-utils.version>[0.4,0.5)</biit-common-utils.version>
-        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
-    </properties>
 </project>
