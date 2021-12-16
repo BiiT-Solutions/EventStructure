@@ -45,7 +45,7 @@ public class Response extends EventResponse {
 			stringAnswer.setValue("");
 			event = stringAnswer;
 		}
-		event.setId(getId());
+		event.setEventId(getEventId());
 		event.setGroup(getGroup());
 		event.setParameter(getParameter());
 		event.setCreationTime(getCreationTime());

@@ -1,9 +1,11 @@
 package com.biit.eventstructure.event;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public interface IKafkaStorable {
-	String getId();
 
-	Date getCreationTime();
+    String getEventId();
+
+    LocalDateTime getCreationTime();
+
 }

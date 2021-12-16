@@ -1,6 +1,6 @@
 package com.biit.eventstructure.event;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class KeyEvent extends BasicEvent {
     private int programId;
@@ -13,7 +13,7 @@ public class KeyEvent extends BasicEvent {
         super();
     }
 
-    public KeyEvent(String id, Date creationTime, int programId, int journeyId, int projectId, String variable, Object value) {
+    public KeyEvent(String id, LocalDateTime creationTime, int programId, int journeyId, int projectId, String variable, Object value) {
         super(id, creationTime);
         this.programId = programId;
         this.journeyId = journeyId;

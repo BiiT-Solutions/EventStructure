@@ -2,42 +2,42 @@ package com.biit.eventstructure.event;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, property = "class")
 public abstract class BasicEvent implements IKafkaStorable {
-	private String id;
-	private Date creationTime;
+    private String eventId;
+    private LocalDateTime creationTime;
 
-	public BasicEvent(String id, Date creationTime) {
-		this.id = id;
-		this.creationTime = creationTime;
-	}
+    public BasicEvent(String eventId, LocalDateTime creationTime) {
+        this.eventId = eventId;
+        this.creationTime = creationTime;
+    }
 
-	public BasicEvent() {
-		this.id = UUID.randomUUID().toString();
-		this.creationTime = new Date();
-	}
+    public BasicEvent() {
+        this.eventId = UUID.randomUUID().toString();
+        this.creationTime = LocalDateTime.now();
+    }
 
-	public Date getCreationTime() {
-		return creationTime;
-	}
+    public LocalDateTime getCreationTime() {
+        return creationTime;
+    }
 
-	public void setCreationTime(Date creationTime) {
-		this.creationTime = creationTime;
-	}
+    public void setCreationTime(LocalDateTime creationTime) {
+        this.creationTime = creationTime;
+    }
 
-	@Override
-	public String toString() {
-		return "id ='" + getId() + "', creationTime = '" + getCreationTime() + "'";
-	}
+    @Override
+    public String toString() {
+        return "id ='" + getEventId() + "', creationTime = '" + getCreationTime() + "'";
+    }
 
-	public String getId() {
-		return id;
-	}
+    public String getEventId() {
+        return eventId;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public void setEventId(String id) {
+        this.eventId = id;
+    }
 }
