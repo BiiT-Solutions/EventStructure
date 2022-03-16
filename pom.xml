@@ -7,6 +7,13 @@
     <version>1.0.4-SNAPSHOT</version>
     <name>Event Structure</name>
 
+    <parent>
+        <groupId>com.biit</groupId>
+        <artifactId>versions</artifactId>
+        <version>[0.1,0.2)</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <distributionManagement>
         <repository>
             <id>central</id>
@@ -25,16 +32,6 @@
         <developerConnection>scm:git:git.biit-solutions.com:BiiT/EventStructure.git</developerConnection>
         <tag>KafkaClient</tag>
     </scm>
-
-
-    <properties>
-        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-        <maven-scm-provider-gitexe.version>1.9.2</maven-scm-provider-gitexe.version>
-        <jackson-annotations.version>2.9.0</jackson-annotations.version>
-        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
-        <!-- Biit Dependencies -->
-        <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
-    </properties>
 
     <build>
         <finalName>event-structure</finalName>
@@ -78,13 +75,11 @@
             <!-- Dependency from Kafka implementation -->
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>${jackson-annotations.version}</version>
         </dependency>
         <!-- File access and logger -->
         <dependency>
             <groupId>com.biit</groupId>
             <artifactId>common-utils</artifactId>
-            <version>${biit-common-utils.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
