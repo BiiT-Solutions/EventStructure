@@ -4,7 +4,7 @@
 
     <groupId>com.biit</groupId>
     <artifactId>event-structure</artifactId>
-    <version>1.0.106-SNAPSHOT</version>
+    <version>1.0.106</version>
     <name>Event Structure</name>
 
     <parent>
@@ -30,7 +30,7 @@
     <scm>
         <connection>scm:git:git.biit-solutions.com:Java/EventStructure.git</connection>
         <developerConnection>scm:git:git.biit-solutions.com:Java/EventStructure.git</developerConnection>
-        <tag>EventStructure</tag>
+        <tag>event-structure-1.0.106</tag>
     </scm>
 
     <build>
