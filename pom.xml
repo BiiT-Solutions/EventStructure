@@ -4,7 +4,7 @@
 
     <groupId>com.biit-solutions.kafka</groupId>
     <artifactId>event-structure</artifactId>
-    <version>1.0.130</version>
+    <version>1.0.131-SNAPSHOT</version>
     <name>Event Structure</name>
 
     <parent>
@@ -44,7 +44,7 @@
         <connection>scm:git:ssh://git@github.com/BiiT-Solutions/EventStructure.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/EventStructure.git</developerConnection>
         <url>https://github.com/BiiT-Solutions/EventStructure.git</url>
-        <tag>event-structure-1.0.130</tag>
+        <tag>EventStructure</tag>
     </scm>
 
     <build>
