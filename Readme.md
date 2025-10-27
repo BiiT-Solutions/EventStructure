@@ -1,4 +1,4 @@
-# Drools Engine
+# Event Structure
 
 Kafka event structure
 
